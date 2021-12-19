@@ -40,7 +40,6 @@ _global_script_class_icons={
 
 config/name="Game 2d"
 run/main_scene="res://World.tscn"
-config/icon="res://icon.png"
 
 [autoload]
 
