@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Player/Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Covid_Boss.png" type="Texture" id=2]
+
+[node name="Level_5" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+position = Vector2( 35, 135 )
+
+[node name="CovidBoss" type="Sprite" parent="."]
+position = Vector2( 175, 108 )
+texture = ExtResource( 2 )
