@@ -61,6 +61,7 @@ points = PoolVector2Array( 16, 16, 0, 16, 0, 0, 16, 0 )
 1/z_index = 0
 
 [node name="Level_5" type="Node2D"]
+position = Vector2( 1, -1 )
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
