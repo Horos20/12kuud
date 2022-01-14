@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/suveBlokkPoolik.png-a0c2f3870d2e0ad38c779e7098325874.stex"
+path="res://.import/SuviTaevasBlokk.png-dceb9636e700d34a6a50617f7b9b7e31.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://level3_assets/suveBlokkPoolik.png"
-dest_files=[ "res://.import/suveBlokkPoolik.png-a0c2f3870d2e0ad38c779e7098325874.stex" ]
+source_file="res://level3_assets/SuviTaevasBlokk.png"
+dest_files=[ "res://.import/SuviTaevasBlokk.png-dceb9636e700d34a6a50617f7b9b7e31.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=false
+flags/filter=true
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
