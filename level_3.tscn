@@ -1,80 +1,126 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://level3_assets/suveBlokk.png" type="Texture" id=1]
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://level3_assets/suviTaust.png" type="Texture" id=3]
 [ext_resource path="res://level3_assets/suveTakistus.png" type="Texture" id=4]
+[ext_resource path="res://level3_assets/SuviTaevasBlokk.png" type="Texture" id=5]
 [ext_resource path="res://level3_assets/suveBlokkPoolik.png" type="Texture" id=6]
 
 [sub_resource type="ConvexPolygonShape2D" id=2]
-points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
+points = PoolVector2Array( 16, 15.815, 0, 15.815, 0, 0.000427246, 16, 0.000427246 )
+
+[sub_resource type="ConvexPolygonShape2D" id=3]
+points = PoolVector2Array( 16, 10, 0, 10, 0, 0, 16, 0 )
+
+[sub_resource type="ConvexPolygonShape2D" id=4]
+points = PoolVector2Array( 6.96547, 0, 0, 0, 6.96547, 0.0841599, 11.6761, 0, 16.5212, 3.17969, 20.6934, 6.00603, 22.7123, 10.9858, 23, 16.1001, 21.3664, 16.1001, 20.5589, 18.5227, 6.83089, 18.7919, 4.40829, 17.8498, 2.92783, 15.4272, 1.58195, 13.9467, 2.2549, 6.4098, 3.86995, 2.77592 )
+
+[sub_resource type="ConvexPolygonShape2D" id=5]
+points = PoolVector2Array( 9, 16, 0, 16, 0, 0.000427246, 9, 0.000427246 )
 
 [sub_resource type="TileSet" id=1]
 0/name = "suveBlokk.png 0"
 0/texture = ExtResource( 1 )
 0/tex_offset = Vector2( 0, 0 )
 0/modulate = Color( 1, 1, 1, 1 )
-0/region = Rect2( -32, 0, 64, 32 )
+0/region = Rect2( 0, 0, 16, 16 )
 0/tile_mode = 0
 0/occluder_offset = Vector2( 0, 0 )
 0/navigation_offset = Vector2( 0, 0 )
 0/shape_offset = Vector2( 0, 0 )
 0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape = SubResource( 2 )
 0/shape_one_way = false
-0/shape_one_way_margin = 0.0
-0/shapes = [  ]
-0/z_index = 0
-1/name = "suveTakistus.png 1"
-1/texture = ExtResource( 4 )
-1/tex_offset = Vector2( 0, 0 )
-1/modulate = Color( 1, 1, 1, 1 )
-1/region = Rect2( 32, 0, 64, 64 )
-1/tile_mode = 0
-1/occluder_offset = Vector2( 0, 0 )
-1/navigation_offset = Vector2( 0, 0 )
-1/shape_offset = Vector2( 0, 0 )
-1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-1/shape_one_way = false
-1/shape_one_way_margin = 0.0
-1/shapes = [  ]
-1/z_index = 0
-2/name = "suveBlokkPoolik.png 2"
-2/texture = ExtResource( 6 )
-2/tex_offset = Vector2( 0, 0 )
-2/modulate = Color( 1, 1, 1, 1 )
-2/region = Rect2( 0, 0, 32, 32 )
-2/tile_mode = 0
-2/occluder_offset = Vector2( 0, 0 )
-2/navigation_offset = Vector2( 0, 0 )
-2/shape_offset = Vector2( 0, 0 )
-2/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-2/shape = SubResource( 2 )
-2/shape_one_way = false
-2/shape_one_way_margin = 1.0
-2/shapes = [ {
+0/shape_one_way_margin = 1.0
+0/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
 "shape": SubResource( 2 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
+0/z_index = 0
+1/name = "suveBlokkPoolik.png 1"
+1/texture = ExtResource( 6 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 0, 0, 16, 10 )
+1/tile_mode = 0
+1/occluder_offset = Vector2( 0, 0 )
+1/navigation_offset = Vector2( 0, 0 )
+1/shape_offset = Vector2( 0, 0 )
+1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1/shape = SubResource( 3 )
+1/shape_one_way = false
+1/shape_one_way_margin = 1.0
+1/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 3 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+1/z_index = 0
+2/name = "suveTakistus.png 2"
+2/texture = ExtResource( 4 )
+2/tex_offset = Vector2( 0, 0 )
+2/modulate = Color( 1, 1, 1, 1 )
+2/region = Rect2( 58, 44, 23, 19 )
+2/tile_mode = 0
+2/occluder_offset = Vector2( 0, 0 )
+2/navigation_offset = Vector2( 0, 0 )
+2/shape_offset = Vector2( 0, 0 )
+2/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+2/shape = SubResource( 4 )
+2/shape_one_way = false
+2/shape_one_way_margin = 1.0
+2/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 4 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
 2/z_index = 0
+3/name = "SuviTaevasBlokk.png 3"
+3/texture = ExtResource( 5 )
+3/tex_offset = Vector2( 0, 0 )
+3/modulate = Color( 1, 1, 1, 1 )
+3/region = Rect2( 0, 0, 9, 16 )
+3/tile_mode = 0
+3/occluder_offset = Vector2( 0, 0 )
+3/navigation_offset = Vector2( 0, 0 )
+3/shape_offset = Vector2( 0, 0 )
+3/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+3/shape = SubResource( 5 )
+3/shape_one_way = false
+3/shape_one_way_margin = 1.0
+3/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 5 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+3/z_index = 0
 
 [node name="Level_3" type="Node2D"]
 
 [node name="SuviTaust" type="Sprite" parent="."]
-position = Vector2( 511.5, 300.5 )
+position = Vector2( 511, 303 )
 scale = Vector2( 1.46143, 1.5075 )
 texture = ExtResource( 3 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
 position = Vector2( 7, 320 )
 
-[node name="Camera2D2" type="Camera2D" parent="Player"]
-position = Vector2( -7, -320 )
+[node name="Camera2D" type="Camera2D" parent="Player"]
 current = true
+smoothing_enabled = true
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource( 1 )
+cell_size = Vector2( 16, 16 )
 format = 1
-tile_data = PoolIntArray( 0, 3, 0, 1, -1610612733, 0, 2, -1610612733, 0, 3, -1610612733, 0, 4, -1610612733, 0, 5, -1610612733, 0, 6, -1610612733, 0, 7, -1610612733, 0, 8, -1610612733, 0, 9, -1610612733, 0, 10, -1610612733, 0, 11, -1610612733, 0, 12, -1610612733, 0, 13, -1610612733, 0, 14, -1610612733, 0, 15, 536870915, 0, 65536, 3, 0, 131072, 3, 0, 196608, 3, 0, 262145, 1, 0, 262150, 0, 0, 327680, 0, 0, 327681, 0, 0, 327682, 536870913, 0, 327684, 0, 0, 327689, 0, 0, 327690, 536870913, 0, 393216, 3, 0, 393218, 0, 0, 393219, 0, 0, 393221, 1, 0, 393223, 0, 0, 393224, 0, 0, 393226, 0, 0, 393227, 0, 0, 393228, 0, 0, 393229, 0, 0, 393230, 0, 0, 458752, 3, 0, 458757, 0, 0, 458758, 0, 0, 524288, 3, 0, 589824, 536870912, 0, 589825, 536870912, 0, 589826, 536870912, 0, 589827, 536870912, 0, 589828, 536870912, 0, 589829, 536870912, 0, 589830, 536870912, 0, 589831, 536870912, 0, 589832, 536870912, 0, 589833, 536870912, 0, 589834, 536870912, 0, 589835, 536870912, 0, 589836, 536870912, 0, 589837, 536870912, 0, 589838, 536870912, 0, 589839, 536870912, 0 )
+tile_data = PoolIntArray( 1179683, 536870914, 0, 1245215, 536870912, 0, 1245216, 536870912, 0, 1245217, 536870912, 0, 1245218, 536870912, 0, 1245219, 536870912, 0, 1310720, 0, 0, 1310721, 0, 0, 1310722, 0, 0, 1310723, 0, 0, 1310724, 0, 0, 1310725, 0, 0, 1310750, 536870912, 0, 1376262, 0, 0, 1376263, 536870912, 0, 1376264, 536870912, 0, 1376265, 536870912, 0, 1376266, 536870912, 0, 1376267, 536870912, 0, 1376285, 536870912, 0, 1441804, 536870914, 0, 1441813, 536870912, 0, 1441814, 536870912, 0, 1441815, 536870912, 0, 1441816, 536870912, 0, 1441817, 536870912, 0, 1441818, 536870912, 0, 1441819, 536870912, 0, 1441820, 536870912, 0, 1441828, 536870912, 0, 1441829, 536870912, 0, 1441830, 536870912, 0, 1441831, 536870912, 0, 1507340, 536870912, 0, 1507341, 536870912, 0, 1507342, 536870912, 0, 1507343, 536870912, 0, 1507344, 536870912, 0, 1507345, 536870912, 0, 1572881, 536870912, 0, 1572882, 536870912, 0, 1572883, 536870912, 0, 1572907, 536870912, 0, 1572908, 536870912, 0, 1572909, 536870912, 0, 1572910, 536870912, 0, 1572911, 536870912, 0, 1572922, 536870912, 0, 1572923, 536870912, 0, 1572924, 536870912, 0, 1572925, 536870912, 0, 1572926, 536870912, 0, 1572927, 536870912, 0, 1638449, 536870912, 0, 1638450, 536870912, 0, 1638451, 536870912, 0, 1638453, 536870912, 0, 1638454, 536870912, 0, 1638455, 536870912, 0, 1703956, 536870912, 0, 1703957, 536870912, 0, 1703958, 536870912, 0, 1703959, 536870912, 0, 1703960, 536870912, 0, 1703969, 536870912, 0, 1703970, 536870912, 0, 1703975, 536870912, 0, 1703976, 536870912, 0, 1703977, 536870912, 0, 1703978, 536870912, 0, 1769498, 536870912, 0, 1769499, 536870912, 0, 1769500, 536870912, 0, 1769501, 536870912, 0, 1769502, 536870912, 0, 1769507, 2, 0, 1835043, 536870912, 0, 1835044, 536870912, 0, 1835045, 536870912, 0, 1835046, 536870912, 0, 2097152, -536870911, 0, 2097215, -2147483647, 0, 2162688, -536870911, 0, 2162751, -2147483647, 0, 2228224, -536870911, 0, 2228287, -2147483647, 0, 2293760, -1610612735, 0, 2293823, -2147483647, 0, 2359296, -1610612735, 0, 2359359, -2147483647, 0, 2424832, 0, 0, 2424833, 0, 0, 2424834, 0, 0, 2424835, 0, 0, 2424836, 0, 0, 2424837, 0, 0, 2424838, 0, 0, 2424839, 0, 0, 2424840, 0, 0, 2424841, 0, 0, 2424842, 0, 0, 2424843, 0, 0, 2424844, 0, 0, 2424845, 0, 0, 2424846, 0, 0, 2424847, 0, 0, 2424848, 0, 0, 2424849, 0, 0, 2424850, 0, 0, 2424851, 0, 0, 2424852, 0, 0, 2424853, 0, 0, 2424854, 0, 0, 2424855, 0, 0, 2424856, 0, 0, 2424857, 0, 0, 2424858, 0, 0, 2424859, 0, 0, 2424860, 0, 0, 2424861, 0, 0, 2424862, 0, 0, 2424863, 0, 0, 2424864, 0, 0, 2424865, 0, 0, 2424866, 0, 0, 2424867, 0, 0, 2424868, 0, 0, 2424869, 0, 0, 2424870, 0, 0, 2424871, 0, 0, 2424872, 0, 0, 2424873, 0, 0, 2424874, 0, 0, 2424875, 0, 0, 2424876, 0, 0, 2424877, 0, 0, 2424878, 0, 0, 2424879, 0, 0, 2424880, 0, 0, 2424881, 0, 0, 2424882, 0, 0, 2424883, 0, 0, 2424884, 0, 0, 2424885, 0, 0, 2424886, 0, 0, 2424887, 0, 0, 2424888, 0, 0, 2424889, 0, 0, 2424890, 0, 0, 2424891, 0, 0, 2424892, 0, 0, 2424893, 0, 0, 2424894, 0, 0, 2424895, 0, 0 )
