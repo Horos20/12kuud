@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/kangelane1Maskiga.png-b634e35a64bfbb82aeebaa3b6da77ffe.stex"
+path="res://.import/SuviTaevasBlokk.png-c01b0dcbfd8bb9bf70eee11e3cdc23ca.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://kangelane1Maskiga.png"
-dest_files=[ "res://.import/kangelane1Maskiga.png-b634e35a64bfbb82aeebaa3b6da77ffe.stex" ]
+source_file="res://assets/level3_assets/SuviTaevasBlokk.png"
+dest_files=[ "res://.import/SuviTaevasBlokk.png-c01b0dcbfd8bb9bf70eee11e3cdc23ca.stex" ]
 
 [params]
 

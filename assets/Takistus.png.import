@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/kangelane1Maskiga.png-b634e35a64bfbb82aeebaa3b6da77ffe.stex"
+path="res://.import/Takistus.png-164ee78ccc0892b8f7dfd3b2deb713e5.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://kangelane1Maskiga.png"
-dest_files=[ "res://.import/kangelane1Maskiga.png-b634e35a64bfbb82aeebaa3b6da77ffe.stex" ]
+source_file="res://assets/Takistus.png"
+dest_files=[ "res://.import/Takistus.png-164ee78ccc0892b8f7dfd3b2deb713e5.stex" ]
 
 [params]
 
