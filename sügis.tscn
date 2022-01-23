@@ -1,13 +1,36 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://blocks.tres" type="TileSet" id=1]
 [ext_resource path="res://kangelane.gd" type="Script" id=2]
-[ext_resource path="res://kangelane1.png" type="Texture" id=3]
+[ext_resource path="res://sheet3.png" type="Texture" id=3]
 [ext_resource path="res://autumnback.png" type="Texture" id=4]
+[ext_resource path="res://runright.tres" type="Animation" id=5]
+[ext_resource path="res://runleft.tres" type="Animation" id=6]
+[ext_resource path="res://idle.tres" type="Animation" id=7]
 
 [sub_resource type="CapsuleShape2D" id=1]
-radius = 16.0
-height = 32.0
+radius = 24.0
+height = 16.0
+
+[sub_resource type="Animation" id=2]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ ExtResource( 3 ) ]
+}
+
+[sub_resource type="Animation" id=3]
+resource_name = "run_right"
+length = 2.0
+loop = true
 
 [node name="sügis" type="Node2D"]
 
@@ -21,13 +44,23 @@ tile_data = PoolIntArray( 131075, 1, 0, 262143, 0, 0, 196608, 0, 0, 196609, 0, 0
 script = ExtResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="kangelane"]
-position = Vector2( 40, 112 )
-scale = Vector2( 1.6625, 1.45625 )
+position = Vector2( 43.5673, 112 )
+scale = Vector2( 1.74269, 1.45625 )
 texture = ExtResource( 3 )
+hframes = 7
+vframes = 2
+frame = 13
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="kangelane"]
-position = Vector2( 64, 88 )
+position = Vector2( 48, 128 )
 shape = SubResource( 1 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="kangelane"]
+anims/RESET = SubResource( 2 )
+anims/idle = ExtResource( 7 )
+anims/run_right = SubResource( 3 )
+anims/runleft = ExtResource( 6 )
+anims/runright = ExtResource( 5 )
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
@@ -35,6 +68,6 @@ shape = SubResource( 1 )
 
 [node name="taust" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
 modulate = Color( 0.380392, 0.560784, 0.682353, 1 )
-position = Vector2( 520, 320 )
+position = Vector2( 520, 304 )
 scale = Vector2( 1.48571, 1.58 )
 texture = ExtResource( 4 )
