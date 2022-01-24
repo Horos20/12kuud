@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/level5_block.png-61e636da6e4bffc7de76ffcbb0abac29.stex"
+path="res://.import/kevadBlokk.png.png-7f52e3b4e6cd371be873f61679182e61.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://level5_block.png"
-dest_files=[ "res://.import/level5_block.png-61e636da6e4bffc7de76ffcbb0abac29.stex" ]
+source_file="res://assets/level2_assets/kevadBlokk.png.png"
+dest_files=[ "res://.import/kevadBlokk.png.png-7f52e3b4e6cd371be873f61679182e61.stex" ]
 
 [params]
 

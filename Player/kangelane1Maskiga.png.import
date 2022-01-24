@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/kangelane1Maskiga.png-b634e35a64bfbb82aeebaa3b6da77ffe.stex"
+path="res://.import/kangelane1Maskiga.png-58179e2988dc01e6587e8ec02f8dc5e6.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://kangelane1Maskiga.png"
-dest_files=[ "res://.import/kangelane1Maskiga.png-b634e35a64bfbb82aeebaa3b6da77ffe.stex" ]
+source_file="res://Player/kangelane1Maskiga.png"
+dest_files=[ "res://.import/kangelane1Maskiga.png-58179e2988dc01e6587e8ec02f8dc5e6.stex" ]
 
 [params]
 
