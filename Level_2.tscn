@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://assets/level2_assets/KEVAD.png" type="Texture" id=1]
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=2]
@@ -6,6 +6,8 @@
 [ext_resource path="res://assets/v2rav.png" type="Texture" id=4]
 [ext_resource path="res://assets/level2_assets/kevadBlokk.png.png" type="Texture" id=5]
 [ext_resource path="res://assets/Takistus.png" type="Texture" id=6]
+[ext_resource path="res://assets/level1_assets/Level_1.gd" type="Script" id=7]
+[ext_resource path="res://OutOfMap.gd" type="Script" id=8]
 
 [sub_resource type="ConvexPolygonShape2D" id=2]
 points = PoolVector2Array( 16, 17, 0, 17, 0, 0.127319, 16, 0.127319 )
@@ -59,7 +61,37 @@ points = PoolVector2Array( 21, 19, 0, 19, 0, 0, 21, 0 )
 
 [sub_resource type="RectangleShape2D" id=4]
 
+[sub_resource type="ConvexPolygonShape2D" id=7]
+points = PoolVector2Array( 21, 19, 0, 19, 0, 0.0720596, 21, 0.0720596 )
+
+[sub_resource type="TileSet" id=6]
+0/name = "Takistus.png 0"
+0/texture = ExtResource( 6 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 60, 44, 21, 19 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape = SubResource( 7 )
+0/shape_one_way = false
+0/shape_one_way_margin = 1.0
+0/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 7 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+0/z_index = 0
+
+[sub_resource type="RectangleShape2D" id=8]
+extents = Vector2( 730, 9 )
+
 [node name="KevadLevel" type="Node2D"]
+script = ExtResource( 7 )
 
 [node name="KevadTaust" type="Sprite" parent="."]
 position = Vector2( 352, 200 )
@@ -70,24 +102,51 @@ position = Vector2( 17, 382 )
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 current = true
+limit_left = 2
+limit_top = 0
+limit_right = 702
+limit_bottom = 401
 smoothing_enabled = true
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource( 1 )
 cell_size = Vector2( 16, 16 )
 format = 1
-tile_data = PoolIntArray( 786461, 0, 0, 786462, 0, 0, 786463, 0, 0, 851995, 0, 0, 851996, 0, 0, 851997, 0, 0, 851999, 1, 0, 917529, 0, 0, 917530, 0, 0, 917537, 0, 0, 917538, 0, 0, 917539, 0, 0, 983064, 0, 0, 983075, 0, 0, 983076, 0, 0, 983077, 0, 0, 1048593, 0, 0, 1048594, 0, 0, 1048597, 0, 0, 1048598, 0, 0, 1048599, 1, 0, 1048613, 1, 0, 1114127, 0, 0, 1114128, 0, 0, 1114129, 0, 0, 1114131, 1, 0, 1179661, 0, 0, 1179662, 0, 0, 1179668, 0, 0, 1179684, 0, 0, 1179685, 0, 0, 1179687, 0, 0, 1179688, 0, 0, 1179689, 0, 0, 1245195, 0, 0, 1245196, 0, 0, 1245222, 1, 0, 1245226, 0, 0, 1245227, 0, 0, 1310729, 0, 0, 1310730, 0, 0, 1310739, 0, 0, 1310763, -1073741824, 0, 1376263, 0, 0, 1376264, 0, 0, 1376265, 0, 0, 1376299, -1073741824, 0, 1441796, 0, 0, 1441797, 0, 0, 1441798, 0, 0, 1441799, 0, 0, 1441835, -1073741824, 0, 1507371, -1073741824, 0, 1572864, 0, 0, 1572865, 0, 0, 1572866, 0, 0, 1572867, 0, 0, 1572868, 0, 0, 1572869, 0, 0, 1572870, 0, 0, 1572871, 0, 0, 1572872, 0, 0, 1572873, 0, 0, 1572874, 0, 0, 1572875, 0, 0, 1572876, 0, 0, 1572877, 0, 0, 1572878, 0, 0, 1572879, 0, 0, 1572880, 0, 0, 1572881, 0, 0, 1572882, 0, 0, 1572883, 0, 0, 1572884, 0, 0, 1572885, 0, 0, 1572886, 0, 0, 1572887, 0, 0, 1572888, 0, 0, 1572889, 0, 0, 1572890, 0, 0, 1572891, 0, 0, 1572892, 0, 0, 1572893, 0, 0, 1572894, 0, 0, 1572895, 0, 0, 1572896, 0, 0, 1572897, 0, 0, 1572898, 0, 0, 1572899, 0, 0, 1572900, 0, 0, 1572901, 0, 0, 1572902, 0, 0, 1572903, 0, 0, 1572904, 0, 0, 1572905, 0, 0, 1572906, 0, 0, 1572907, 0, 0 )
+tile_data = PoolIntArray( 786461, 0, 0, 786462, 0, 0, 786463, 0, 0, 851995, 0, 0, 851996, 0, 0, 851997, 0, 0, 917529, 0, 0, 917530, 0, 0, 917537, 0, 0, 917538, 0, 0, 917539, 0, 0, 983064, 0, 0, 983075, 0, 0, 983076, 0, 0, 983077, 0, 0, 1048593, 0, 0, 1048594, 0, 0, 1048597, 0, 0, 1048598, 0, 0, 1114127, 0, 0, 1114128, 0, 0, 1114129, 0, 0, 1179661, 0, 0, 1179662, 0, 0, 1179668, 0, 0, 1179684, 0, 0, 1179685, 0, 0, 1179687, 0, 0, 1179688, 0, 0, 1179689, 0, 0, 1245195, 0, 0, 1245196, 0, 0, 1245226, 0, 0, 1245227, 0, 0, 1310729, 0, 0, 1310730, 0, 0, 1310739, 0, 0, 1310763, -1073741824, 0, 1376263, 0, 0, 1376264, 0, 0, 1376265, 0, 0, 1376299, -1073741824, 0, 1441796, 0, 0, 1441797, 0, 0, 1441798, 0, 0, 1441799, 0, 0, 1441835, -1073741824, 0, 1507371, -1073741824, 0, 1572864, 0, 0, 1572865, 0, 0, 1572866, 0, 0, 1572867, 0, 0, 1572868, 0, 0, 1572869, 0, 0, 1572870, 0, 0, 1572871, 0, 0, 1572907, 0, 0 )
 
-[node name="Area2D" type="Area2D" parent="."]
+[node name="Värav" type="Area2D" parent="."]
 position = Vector2( 688, 295 )
 script = ExtResource( 3 )
 __meta__ = {
 "_edit_group_": true
 }
 
-[node name="Sprite" type="Sprite" parent="Area2D"]
+[node name="Sprite" type="Sprite" parent="Värav"]
 position = Vector2( -1, 33 )
 texture = ExtResource( 4 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Värav"]
 shape = SubResource( 4 )
+
+[node name="Takistused" type="Area2D" parent="."]
+
+[node name="TileMap" type="TileMap" parent="Takistused"]
+tile_set = SubResource( 6 )
+cell_size = Vector2( 16, 16 )
+centered_textures = true
+collision_use_parent = true
+format = 1
+tile_data = PoolIntArray( 851999, 0, 0, 1048599, 0, 0, 1048613, 0, 0, 1114131, 0, 0, 1245222, 0, 0 )
+
+[node name="OutOfMap" type="Area2D" parent="."]
+position = Vector2( 343, 412 )
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="OutOfMap"]
+position = Vector2( 74, -1 )
+shape = SubResource( 8 )
+
+[connection signal="body_entered" from="Takistused" to="." method="_on_Takistused_body_entered"]

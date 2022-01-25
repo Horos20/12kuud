@@ -1,5 +1,7 @@
 extends KinematicBody2D
 
+class_name Player
+
 const acceleration = 512
 const max_speed = 64
 const friction = 0.25
@@ -32,3 +34,10 @@ func _physics_process(delta):
 			velocity.x = lerp(velocity.x, 0, air_resistance)
 	
 	velocity = move_and_slide(velocity, Vector2.UP)
+
+var is_hit:= false
+func hit()->void:
+	if is_hit:return
+	is_hit = true
+	get_tree().change_scene("res://Level_1.tscn")
+	is_hit = false
